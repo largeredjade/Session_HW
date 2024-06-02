@@ -16,4 +16,4 @@ class CustomUserAdmin(UserAdmin):
         ('Custom fields', {'fields': ('nickname',)}),  # Add your custom field here
     )
 
-admin.site.register(User, UserAdmin)
+admin.site.register(User, CustomUserAdmin)
